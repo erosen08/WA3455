@@ -1,0 +1,10 @@
+package com.customers;
+
+@SpringBootApplication
+public class CustomersApi {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CustomersApi.class, args);
+	}
+
+}
