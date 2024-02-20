@@ -41,7 +41,7 @@ public class CustomerController {
 		}
 		
 		newCustomer = service.saveCustomer(newCustomer);
-		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id").buildAndExpand(newCustomer.getId()).toUri();
+		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(newCustomer.getId()).toUri();
 		
 		ResponseEntity<?> response = ResponseEntity.created(location).build();
 		return response;
