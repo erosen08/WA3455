@@ -25,4 +25,8 @@ public class CustomerService {
 	public Customer saveCustomer(Customer newCustomer) {
 		return repo.save(newCustomer);
 	}
+	
+	public void deleteCustomer(Customer customer) {
+		repo.delete(customer);
+	}
 }
