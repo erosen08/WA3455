@@ -8,12 +8,28 @@
 	
 	<br />
 	
-	<form>
+	<form onsubmit="register()")>
+		<label for="newName">Name</label>
+		<input id="newName" type="text"></input>
+		<label for="newEmail">Email</label>
+		<input id="newEmail" type="email"></input>
+		<label for="newPassword">Password</label>
+		<input id="newPassword" type="password"></input>
+		<input type="submit" value="Register">
+	</form>
+	
+	<br />
+	
+	<form onLogin()>
 		<label for="name">Name</label>
 		<input id="name"></input>
 		<label for="password">Password</label>
 		<input id="password"></input>
 		<input type="submit" value="Log In">
 	</form>
+	
+	<br />
+	<a th:href="@{/browseCustomers}">Browse Customers</a>
+
 </body>
 </html>

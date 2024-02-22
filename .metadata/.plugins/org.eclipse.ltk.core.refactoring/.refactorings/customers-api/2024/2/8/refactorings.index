@@ -3,3 +3,4 @@
 1708316034903	Delete element
 1708316131657	Rename resource 'CustomerService.java'
 1708316271332	Rename type 'CustomerServiceImpl'
+1708396195249	Move 'Dockerfile' to 'customers-api'

@@ -21,6 +21,11 @@ public class Customer {
 	@Column(name = "email")
 	private String email;
 	
+	@Column(name="password")
+	private String password;
+	
+	//lombok
+	
 	public long getId() {
 		return id;
 	}
@@ -43,5 +48,13 @@ public class Customer {
 	
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
