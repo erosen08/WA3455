@@ -36,6 +36,14 @@ public class CustomerController {
 		return service.findById(id);
 	}
 	
+	@GetMapping("/{username}")
+	public Optional<Customer> getCustomerByName(@PathVariable("username") String name) {
+		return service.findByName(name);
+	}
+	
+	
+	//getmapping find by username return username and password
+	
 	@PostMapping
 	public ResponseEntity<?> addCustomer(@RequestBody Customer newCustomer, UriComponentsBuilder uri) {
 		if (newCustomer.getId() != 0 || newCustomer.getName() == null || newCustomer.getEmail() == null) {

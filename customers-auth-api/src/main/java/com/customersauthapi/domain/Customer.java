@@ -3,8 +3,8 @@ package com.customersauthapi.domain;
 public class Customer {
 	
 	long id;
-	String name;
-	String password;
+	public String name;
+	public String password;
 	String email;
 
 }

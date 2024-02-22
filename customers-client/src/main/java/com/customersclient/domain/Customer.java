@@ -3,12 +3,13 @@ package com.customersclient.domain;
 public class Customer {
 	
 	long id;
-	
 	String name;
-	
 	String email;
-	
 	String password;
+	
+	public String toJSON() {
+		return "{\"name\"" + ": \"" + name + "\", \"email\"" + ": \"" + email + "\", \"password\"" + ": \"" + password + "\" }";
+	}
 	
 	public long getId() {
 		return id;
@@ -17,6 +18,7 @@ public class Customer {
 	public void setId(long id) {
 		this.id = id;
 	}
+	
 	
 	public String getName() {
 		return name;

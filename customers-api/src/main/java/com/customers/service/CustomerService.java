@@ -29,4 +29,9 @@ public class CustomerService {
 	public void deleteCustomer(Customer customer) {
 		repo.delete(customer);
 	}
+
+	public Optional<Customer> findByName(String name) {
+		// TODO Auto-generated method stub
+		return repo.findByName(name);
+	}
 }

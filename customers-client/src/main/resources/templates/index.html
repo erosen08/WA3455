@@ -8,7 +8,7 @@
 	
 	<br />
 	
-	<form onsubmit="register()")>
+	<form th:action="@{/register}" th:object="${customer}" method="post")>
 		<label for="newName">Name</label>
 		<input id="newName" type="text"></input>
 		<label for="newEmail">Email</label>
